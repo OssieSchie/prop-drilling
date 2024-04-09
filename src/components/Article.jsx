@@ -1,10 +1,11 @@
 import Button from "./Button";
-function Article() {
+import styles from "./Article.module.css";
+function Article(props) {
   return (
     <article>
-      <h3>(article.header)</h3>
-      <p>(article.content)</p>
-      <Button />
+      <h3 className={styles.h3}>{props.header}</h3>
+      <p>{props.content}</p>
+      <Button>Read More</Button>
     </article>
   );
 }

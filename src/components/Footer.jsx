@@ -1,9 +1,9 @@
-function Footer() {
+import styles from "./Footer.module.css";
+function Footer(props) {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <p>
-        Her er en meget standard footer hvor jeg gerne vil vise
-        (data.contactInfo.email)
+        Her er en meget standard footer hvor jeg gerne vil vise ({props.data})
       </p>
     </footer>
   );
